@@ -6,7 +6,9 @@ module.exports = function(app){
     // landing page
     app.get('/', function(req, res){
         console.log("landing page")
-        res.json({message: "Welcome to ababa.com"})
+        res.render("layouts/signup")
+        
+        // res.json({message: "Welcome to ababa.com"})
     })
 
 
